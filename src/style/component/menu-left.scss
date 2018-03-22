@@ -1,0 +1,37 @@
+@import '../common/variables.scss';
+
+.menu-left{
+    background: $brown;
+    position: fixed;
+    width: $menu-width;
+    height: 100vh;
+    color: white;
+}
+
+.app-title{
+    height: 335px;
+    width: $menu-width;
+    .title{
+        position: relative;
+        left: -5px;
+        top: 250px;
+        
+        font-size: 40px;
+        white-space: nowrap;
+        font-weight: bold;
+        transform: rotate(-90deg);
+    }
+}
+
+.menu-links{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    .menu-item{
+        padding: 10px 0;
+        cursor: pointer;
+        &:hover{
+            color: $grey;
+        }
+    }
+}
